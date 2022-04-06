@@ -28,4 +28,4 @@ The application runs with nodemon module that will automatically restart the nod
 
 ## Error Middleware
 
-Besides errorControllers configured in the errorControllers.js file, the application includes error middleware that handles invalid request paths. by sending back json error message with 404 status code. The function is configured in a separate file and is imported in index.js.
+The application handles errors that occur while executing API request to the provided path. For example, if the path is not correct, or API Request is not valid, the application sends back json error message with 404 status code. The function is configured in a spearate file and is imported in index.js.
