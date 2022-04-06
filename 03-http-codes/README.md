@@ -12,20 +12,28 @@ Status codes, respective URLs and request methods are listed.
 
 ### 2XX Success
 `200(OK)`: `localhost:8080/api/success` : `GET`
+
 `201(Created)`: `localhost:8080/api/success` : `POST` : takes one parameter - `username`
+
 `204(No Content)`: `localhost:8080/api/success/:id` : `DELETE` 
 
 ### 3XX Redirection
+
 `301(Moved Permanently)`: `localhost:8080/api/redirect` : `GET`
 
 ### 4XX Client Error
 `400(Bad Request)`: `localhost:8080/api/error` : `POST`
+
 `401(Unauthorized)`: `localhost:8080/api/error` : `GET`
+
 `403(Forbidden)`: `localhost:8080/api/error/super-secret` : `GET`
+
 `404(Not Found)`: any invalid path or request
+
 `405(Method Not Allowed)`: `localhost:8080/api/error/only-put` : `PUT` 
 
 ### 5XX Server Error
+
 `500(Internal Server Error)`: `localhost:8080/api/error/server` : `POST`
 
 ## .env file confirguration
