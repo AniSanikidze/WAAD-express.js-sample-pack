@@ -13,9 +13,6 @@ const port = process.env.PORT || 8080
 //Importing errorHandler
 const {errorHandler} = require('./middleware/errorMiddleware')
 
-app.use(express.urlencoded({ extended: true }))
-app.use(express.json())
-
 //Enables using files from 'static' directory
 app.use(express.static('static'));
 
