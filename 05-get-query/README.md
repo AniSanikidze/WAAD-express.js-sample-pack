@@ -1,4 +1,4 @@
-# 03-GET-Query
+# 05-GET-Query
 
 The application showcases parsing of queries when executing GET request on the following path: localhost:8080/users?. The user should provide `name` and `id` query parameters with respective values, which will be compared by the application to the users array to find the user matching provided parameters.
 

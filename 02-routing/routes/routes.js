@@ -6,13 +6,11 @@ const router = express.Router()
 const {
     getController,
     postController,
-    putController,
-    patchController,
-    deleteController} = require('../controllers/pathController')
+    putController} = require('../controllers/pathController')
 
 //Calling GET and POST requests with respective controllers on path localhost:8080/api
 router.route('/').get(getController).post(postController)
-//Calling PUT, PATCH and DELETE requests with respective controllers on path localhost:8080/api/:id
-router.route('/:id').put(putController).patch(patchController).delete(deleteController)
+//Calling PUT request on path localhost:8080/api/:id
+router.route('/:id').put(putController)
 //Exporting router
 module.exports = router
