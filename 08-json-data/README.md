@@ -2,7 +2,12 @@
 
 The application shows how to recieve a JSON data when executing POST request on path: `localhost:8080/json-data` and logs recieved data.
 
-The user can change the port number by creating .env file and defining PORT variable with respective port number. The server responds to the GET request by sending back `Hello World`.
+The user can change the port number by creating .env file and defining PORT variable with respective port number.
+
+## Testing
+
+`POST` : `localhost:8080/json-data` : expected data provided in the request body
+
 
 ## .env file confirguration
 

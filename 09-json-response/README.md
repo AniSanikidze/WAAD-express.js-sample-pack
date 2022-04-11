@@ -4,6 +4,10 @@ The application shows how to send a JSON data when executing GET request on path
 
 The user can change the port number by creating .env file and defining PORT variable with respective port number.
 
+## Testing 
+
+`GET` : `localhost:8080/json-response`
+
 ## .env file confirguration
 
 The default port number 8080 can be modified by creating .env file in the root directory and defining desired port number. 

@@ -11,7 +11,7 @@ The user can change the port number by creating .env file and defining PORT vari
 
 `POST` : `localhost:8080/api/user` : `username` should be provided in the request body
 
-`DELETE` : `localhost:8080/api/user` 
+`DELETE` : `localhost:8080/api/user`
 
 ## .env file confirguration
 

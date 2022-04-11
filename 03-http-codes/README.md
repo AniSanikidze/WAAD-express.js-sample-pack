@@ -2,13 +2,12 @@
 
 The application showcases examples of retrieving different http status codes by making http requests to a server created using express.js framework. The routes as well as respective controllers are configured separately in `routes` and `controllers` folders.
 
-Controllers are divided in 3 categories: successControllers, redirectionControllers and errorControllers. All listed controllers retrieve specific status codes and repsective messages in json. 
+Controllers are divided in 2 categories: successControllers and errorControllers. All listed controllers retrieve specific status codes and repsective messages in json. 
 
 The user can change the port number by creating .env file and defining PORT variable with respective port number.
 
 ## HTTP Status Codes showcased:
 Below is given http status codes that were implemented in the application and can be demonstrated by making appropriate request to the given URL.
-Status codes, respective URLs and request methods are listed.
 
 ### 2XX Success
 `200(OK)`: `localhost:8080/api/success` : `GET`
@@ -16,10 +15,6 @@ Status codes, respective URLs and request methods are listed.
 `201(Created)`: `localhost:8080/api/success` : `POST` : takes one parameter - `username`
 
 `204(No Content)`: `localhost:8080/api/success/:id` : `DELETE` 
-
-### 3XX Redirection
-
-`301(Moved Permanently)`: `localhost:8080/api/redirect` : `GET`
 
 ### 4XX Client Error
 `400(Bad Request)`: `localhost:8080/api/error` : `POST`

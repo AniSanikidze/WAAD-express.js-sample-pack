@@ -15,8 +15,7 @@ const postSuccessController = (req, res) => {
 
 //@desc DELETE response
 //@route DELETE /api/success/:id
-//@status 204: The server has fulfilled the request but does not need to return an entity-body,
-// and might want to return updated metainformation. 
+//@status 204: The server has fulfilled the request but does not need to return an entity-body 
 const deleteSuccessController = (req, res) => {
     res.status(204).end()
 }

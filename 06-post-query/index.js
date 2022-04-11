@@ -15,9 +15,9 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
 //Calling POST request on path: localhost:8080/login
-//The request checks if required parameters username and password are provided
+//The request checks if required parameters: username and password are provided
 //If they are provided, then success message is retireved and server sends back
-//provided parameters, otherwise error is raised.
+//provided parameters, otherwise the error is raised.
 app.post('/login', (req,res) => {
     var username = req.body.username;
     var password = req.body.password;

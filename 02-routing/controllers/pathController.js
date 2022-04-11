@@ -21,7 +21,5 @@ const putController = (req, res) => {
 module.exports = {
     getController,
     postController,
-    patchController,
-    putController,
-    deleteController
+    putController
 }

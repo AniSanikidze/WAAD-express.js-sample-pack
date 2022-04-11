@@ -8,8 +8,6 @@ const {getSuccessController,
        postSuccessController,
        deleteSuccessController} = require('../controllers/successControllers')
 
-const {getRedirectController} = require('../controllers/redirectionControllers')
-
 const {postBadRequestController, getUnauthorizedRequestController,
        getForbiddenReuqestController, methodNotAllowed, internalServerErrorController} = require('../controllers/errorControllers')
 
@@ -21,11 +19,6 @@ router.route('/success').get(getSuccessController).post(postSuccessController)
 //Calling DELETE requests with deleteSuccessController on path localhost:8080/api/success/:id.
 //The following request sends the status code 204(No Content) and the json message.
 router.route('/success/:id').delete(deleteSuccessController)
-
-//3xx Redirection
-//Calling GET request on path: localhost:8080/api/redirect.
-//It redirects user to the provided URL and sends the status code of 301(redirected Permanently).
-router.route('/redirect').get(getRedirectController)
 
 //4xx Client Error
 //Calling POST and GET requests on path: localhost:8080/api/error.

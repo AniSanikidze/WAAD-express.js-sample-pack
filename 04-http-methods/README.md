@@ -2,9 +2,19 @@
 
 The application showcases examples of different http method requests using express.js framework. Example routes are given for GET, POST, PUT, PATCH and DELETE methods. The routes as well as respective controllers are configured in separate files - routes/routes.js and controllers/pathController.js.
 
-For GET and POST requests the path is defined as localhost:8080/api, while for PUT, PATCH and DELETE methods, the path is localhost:8080/api/:id. This way the application demonstartes possibility of updating and deleting an item with respect to the provided id.
-
 The user can change the port number by creating .env file and defining PORT variable with respective port number.
+
+## Testing
+
+`GET` : `localhost:8080/api`
+
+`POST` : `localhost:8080/api`
+
+`PUT` : `localhost:8080/api/:id`
+
+`PATCH` : `localhost:8080/api/:id`
+
+`DELETE` : `localhost:8080/api/:id`
 
 ## .env file confirguration
 
