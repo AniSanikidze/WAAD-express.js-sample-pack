@@ -1,4 +1,4 @@
-# 13-MySQL-Example
+# WAAD-express.js-sample-pack
 
 The express.js starter pack includes the following small applications:
 
